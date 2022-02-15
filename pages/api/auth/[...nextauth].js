@@ -13,6 +13,17 @@ export default NextAuth({
 	// pages: {
 	// 	signIn: "/sign-in",
 	// },
+
+	// callbacks: {
+	// 	jwt: async ({ token, user }) => {
+	// 		user && (token.user = user);
+	// 		return token;
+	// 	},
+	// 	session: async ({ session, token }) => {
+	// 		session.user = token.user;
+	// 		return session;
+	// 	},
+	// },
 	providers: [
 		CredentialsProvider({
 			async authorize(credentials) {
