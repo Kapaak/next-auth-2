@@ -1,6 +1,5 @@
 import { getSession } from "next-auth/react";
 
-import { hashPassword, verifyPassword } from "../../../utils/auth";
 import clientPromise from "../../../lib/db";
 
 const handler = async (req, res) => {
