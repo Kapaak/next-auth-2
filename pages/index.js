@@ -14,6 +14,9 @@ export default function Home() {
 				<Link href="/sign-up">
 					<a>Sign up page</a>
 				</Link>
+				<Link href="/forgot-password">
+					<a>Forgot password</a>
+				</Link>
 			</SignOptions>
 			<button onClick={() => console.log(session)}>session</button>
 		</div>
