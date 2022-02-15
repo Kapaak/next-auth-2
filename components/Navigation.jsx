@@ -18,6 +18,11 @@ const Navigation = () => {
 				<a>HOME PAGE</a>
 			</Link>
 			<button onClick={() => console.log(session)}>check the session</button>
+			{session && (
+				<Link href="/profile">
+					<a>user profile</a>
+				</Link>
+			)}
 			<button onClick={() => handleSignVariant()}>
 				{session ? "sign out" : "sign in"}
 			</button>
